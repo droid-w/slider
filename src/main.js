@@ -1,7 +1,7 @@
 let slideIndex = 0;
 
 function moveSlide(direction) {
-    const slides = document.querySelectorAll('.slider-container__item');
+    const slides = document.querySelectorAll('.slider-list__item');
     slideIndex += direction;
 
     if (slideIndex < 0) {
@@ -11,6 +11,6 @@ function moveSlide(direction) {
         slideIndex = 0;
     }
 
-    const carousel = document.querySelector('.slider-container');
+    const carousel = document.querySelector('.slider-list');
     carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
